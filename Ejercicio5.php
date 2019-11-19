@@ -7,7 +7,7 @@
 		array("edad"=>9,"altura"=>1.1,"acompañado"=>true,"permitido"=>true));
 
 	for ($i=0; $i<count($personas); $i++){
-		if ($personas[$i]<6){
+		if ($personas[$i]["edad"]<6){
 			$personas[$i]["permitido"]=false;
 		}
 		if ($personas[$i]["edad"]<10 && !$personas[$i]["acompañado"]){
